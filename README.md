@@ -19,4 +19,4 @@ Have fun.
 
 ![Alt Text](https://i.imgur.com/lbK9MPk.gif)
 
-All is left to do is to sort the sections with respect to columns with ranks, sort as number A->Z
+All is left to do is to sort the sections with respect to columns with ranks, A->Z order
