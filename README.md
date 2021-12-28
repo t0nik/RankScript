@@ -1,4 +1,4 @@
-# osu! country rank script
+# osu! country rank updater script
 
 **Using:** 
 
