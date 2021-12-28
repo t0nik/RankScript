@@ -14,3 +14,5 @@ Register an OAuth application in osu!: https://osu.ppy.sh/docs/index.html#authen
 
 Change #TODO sections in .py file.
 Have fun.
+
+![Alt Text](https://i.imgur.com/lbK9MPk.gif)
