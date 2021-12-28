@@ -8,9 +8,9 @@
 
 **Manual:**
 
-Follow the Python Quickstart Guide here: https://developers.google.com/docs/api/quickstart/python.
+Follow the Python Quickstart Guide here: https://developers.google.com/docs/api/quickstart/python
 
-Register an OAuth application in osu!: https://osu.ppy.sh/docs/index.html#authentication.
+Register an OAuth application in osu!: https://osu.ppy.sh/docs/index.html#authentication
 
 Change #TODO sections in .py file.
 Have fun.
