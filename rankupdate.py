@@ -17,7 +17,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 # The ID and range of a spreadsheet.
 SPREADSHEET_ID = '1IjRTt47oSiENPvArHEXFJZexsT7edaE1HpKERFOZjDw'     # TODO
-READ_RANGE = 'A3:H27'
+READ_RANGE = 'A3:H99'
 WRITE_RANGE_TOP_UP = 'B3'
 WRITE_RANGE_TOP_DOWN = 'F3'
 
