@@ -12,7 +12,7 @@ Follow the Python Quickstart Guide here: https://developers.google.com/docs/api/
 
 Register an OAuth application in osu!: https://osu.ppy.sh/docs/index.html#authentication
 
-Change #TODO sections in .py file.
+Change #TODO sections in .py file. Run the script. It will create a token.json file, remove it if it expires (for me the token expired about a month later).
 Have fun.
 
 **Script showcase:**
