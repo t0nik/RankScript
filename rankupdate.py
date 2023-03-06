@@ -58,12 +58,15 @@ def getOsuToken():
 
     response = requests.post(TOKEN_URL, data)
 
+    # print(response.json())
+
     return response.json().get('access_token')
 
 
 def main():
     creds = getGoogleToken()
     osuToken = getOsuToken()
+    # print(osuToken)
 
 
     try:
@@ -116,13 +119,15 @@ def main():
         i = 0   # 0 - Better top, 1 - Worse top
         for topka in usernames:
             for user in topka:
+                # print(user)
                 params = {
                     'user': user,
                     'key': 'username',
                     'mode': 'osu'
                 }
 
-                response = requests.get(f'{API_URL}/users/{user}/osu', params=params, headers=headers)
+                response = requests.get(f'{API_URL}/users/{user}/osu?key=username', params=params, headers=headers)
+                # print((response.json()))
                 country_rank = response.json().get('statistics').get('country_rank')
                 if country_rank is None:
                     country_rank = 'Inactive'
