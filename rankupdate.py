@@ -66,8 +66,6 @@ def getOsuToken():
 def main():
     creds = getGoogleToken()
     osuToken = getOsuToken()
-    # print(osuToken)
-
 
     try:
         # Sheets API
@@ -94,8 +92,6 @@ def main():
             if row[4] != '':
                 usernames[1].append(row[4])
 
-        # print(usernames)
-
         if not values:
             print('No data found.')
             return
@@ -119,7 +115,6 @@ def main():
         i = 0   # 0 - Better top, 1 - Worse top
         for topka in usernames:
             for user in topka:
-                # print(user)
                 params = {
                     'user': user,
                     'key': 'username',
@@ -127,6 +122,13 @@ def main():
                 }
 
                 response = requests.get(f'{API_URL}/users/{user}/osu?key=username', params=params, headers=headers)
+                print(user, response)
+
+                # Check for 404 client error, meaning user doesn't exist
+                if response.status_code == 404:
+                    ranks[i].append(['-'])
+                    continue
+
                 # print((response.json()))
                 country_rank = response.json().get('statistics').get('country_rank')
                 if country_rank is None:
